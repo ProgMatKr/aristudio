@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Document</title>
     <style>
@@ -104,6 +105,8 @@
     
     <footer class="text-white"> 
         <script>
+
+   
             document.addEventListener('scroll', function() {
                 const elementsFadeIn = document.querySelectorAll('.scroll-animate');
                 const elementsZoomIn = document.querySelectorAll('.scroll-zoomin');
@@ -127,9 +130,13 @@
                     }
                 });
             });
+            function toggleMenu() {
+    var x = document.getElementById("myLinks");
+    x.classList.toggle("hidden");
+}
         </script>
         
-        <div class="w-full mx-auto p-10 bg-gray-900 grid grid-cols-6 gap-8">
+        <div class="w-full mx-auto p-10 bg-gray-700 flex flex-col lg:grid lg:grid-cols-6 gap-8">
             <div>
                 <img src="{{ asset('images/ARISTUDIO.svg') }}" alt="Logo" class="w-44">
             </div>
@@ -165,7 +172,7 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full mx-auto bg-gray-900 border-t border-indigo-500 p-4">
+        <div class="w-full mx-auto bg-gray-800 border-t border-indigo-500 p-4">
             <div class="flex justify-between items-center">
                 <p class="text-gray-200">&copy; 2024 Moja Strona. Wszelkie prawa zastrzeżone.</p>
             </div>

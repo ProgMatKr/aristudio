@@ -8,9 +8,11 @@
 @section("header")
 <div class=" w-full overflow-hidden">
     <div class="w-full bg-gray-900  z-2 mx-auto flex justify-between items-center">
-        <div class="logo">
-            <img src="{{ asset('images/ARISTUDIO.svg') }}" alt="Logo" class="w-44">
-        </div>
+        <a href="/">
+            <div class="logo">
+                <img src="{{ asset('images/ARISTUDIO.svg') }}" alt="Logo" class="w-44">
+            </div>
+            </a>
         <nav>
             <ul class="flex space-x-4 text-white">
                 <li><a href="/"
