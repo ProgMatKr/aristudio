@@ -136,7 +136,7 @@
 }
         </script>
         
-        <div class="w-full mx-auto p-10 bg-gray-700 flex flex-col lg:grid lg:grid-cols-6 gap-8">
+        <div class="w-full mx-auto p-10 bg-gray-900 flex flex-col lg:grid lg:grid-cols-6 gap-8">
             <div>
                 <img src="{{ asset('images/ARISTUDIO.svg') }}" alt="Logo" class="w-44">
             </div>
@@ -172,7 +172,7 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full mx-auto bg-gray-800 border-t border-indigo-500 p-4">
+        <div class="w-full mx-auto bg-gray-900 border-t border-indigo-500 p-4">
             <div class="flex justify-between items-center">
                 <p class="text-gray-200">&copy; 2024 Moja Strona. Wszelkie prawa zastrzeżone.</p>
             </div>

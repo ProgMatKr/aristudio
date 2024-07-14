@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\MessageController;
+
+
 
 Route::get('/', function () {
     return view('index');
@@ -25,3 +29,16 @@ Route::get('/uslugi', function () {
 Route::get('/o-nas', function () {
     return view('about_us.index'); // Zmieniono na 'about_us'
 });
+
+Route::get('/test-db', function () {
+    try {
+        DB::connection()->getPdo();
+        return 'Połączenie z bazą danych działa!';
+    } catch (\Exception $e) {
+        return 'Błąd połączenia: ' . $e->getMessage();
+    }
+});
+
+
+
+Route::post('/submit-contact-form', [MessageController::class, 'submitContactForm']);
